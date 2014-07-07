@@ -1,0 +1,6 @@
+Name#
+College#
+Major#
+images/ProfPics/FirstLast.jpg#
+images/CardFlags/CollegeFlag.jpg#
+Card Color (1=green,2=yellow,3=blue,4=red,5=gray)#

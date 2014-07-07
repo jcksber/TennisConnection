@@ -1,0 +1,4 @@
+FirstName LastName#
+College/University#
+images/ProfPics/FirstLastLg.jpg (or .png)#
+Actual Testimonial (with quotation marks!).#

@@ -1,0 +1,103 @@
+Created by Jack Kasbeer
+Copyright 2014 jackkasbeer.com
+
+
+
+
+INSTRUCTIONS FOR TENNIS CONNECTION
+
+
+
+
+VALUABLE NOTES:  
+
+AUTHOR'S WARNING:
+* ADDING/DELETING SOMETHING AS SMALL AS AN EXTRA CHARACTER IN ANY OF THE FILES EXCEPT THE ONES YOU'RE 						 CREATING COULD RESULT IN A HUGE WEBSITE FLAW, AND A NASTY BUG TO FIND IN THE CODE (TO FIX IT)
+* If the above happens, contact me immediately (847.650.8368) (jkasbeer2@gmail.com)
+* The first note isn't meant to be frightening, just informative; adding a player or testimonial is actually an easy process if you follow this detailed set of instructions
+
+IMAGES:
+* I will only use the extension ".jpg", but ".png" or ".gif" are perfectly acceptable
+* There is a difference between ".jpg" and ".JPG"; image won't load properly if referenced as one when it's actualy the other
+* _size	will follow the structure "width x height", and px = PIXELS
+* When changing the size of a picture: (1) make sure you copy it before shrinking it and (2) change whichever measurement [height or width] that ensures they're both AT LEAST the stated "_size")
+* Easiest place to change the size of a picture is in the built-in Mac app "Preview"
+
+TEXT FILES:
+* STRUCTURE of the file is extremely important!
+* LOCATION and NAME of the file are guidelines for organizational purposes and simplicity, but it's very easy to mess something up if they're not followed
+* Easiest way to create a .txt file is by saving the document with ".txt" at the end of the name in Microsoft Word
+
+
+
+
+INSTRUCTIONS FOR ADDING PLAYERS/TESTIMONIALS
+
+
+
+
+GENERAL STEPS(first steps no matter what):
+
+1. Add two pictures (same picture, two copies) of the player/testimonial_writer to the folder "images/ProfPics"
+	- First image:   _name	"FirstLast.jpg" 
+					 _size	 100px x 100px
+	- Second image:  _name	"FirstLastLg.jpg"
+					 _size	 135px x 135px 
+2. If you're adding a Player, move on to the "PLAYERS" section
+	If you're adding a Testimonial, move on to the "TESTIMONIALS" section (skip the "PLAYERS" section)
+
+
+* Finish general steps before doing these...
+
+
+PLAYERS:
+
+1. Add a picture of the player's college/university flag to the folder "images/CardFlags"
+	- Change the _size of the image to 60px x 38px
+	- Save the image as "CollegeAbbreviation.jpg"
+2. Create a .txt file, STRICTLY following the structure of player-card-example.txt (found in the README folder)
+	_name		"FirstLast.txt"	
+	_location	 store .txt file in the folder "readables/Players"
+3. Ensure you did the above steps correctly before moving on...
+4. Open up the file "players.html", scroll all the way to the bottom of the document, you'll see a series of "createPlayerCardWithFile('readables/Players/Example.txt')" written in-between "<script>" and "</script>" (these are the other player cards! [they're created behind the scenes])
+5. At the BOTTOM of that series, between the two comments I've put there, type in "createPlayerCardWithFile('readables/Players/FileYouJustCreatedName.txt');"
+6. Ensure that what you just wrote is lined up with the others above it (same indentation).
+7. Save your changes, and YOU'RE DONE!
+
+
+TESTIMONIALS
+
+1. Create a .txt file, STRICTLY following the structure of testimonial-example.txt (found in the README folder)
+	_name		"FirstLast.txt"
+	_location	 store .txt file in the folder "readables/Testimonials"
+2. Ensure you did the above steps correctly and know which side of the Testimonials page is shorter (you'll want to add the testimonial you're creating to this side for organizational and design purposes) before moving on...
+3. Open up the file "testimonials.html", Search For (Cmd + F) "test-col-right," (there will be 1 result).
+4. Right under "test-col-right," you'll see a series of "createTestimonialWithFile('readables/Testimonials/Example.txt', 'right'or'left')" written in-between "<script>" and "</script>" (these are the other testimonials! [they're created behind the scenes])
+5. At the BOTTOM of that series, between the two comments I've put there, type in "createTestimonialWithFile('readables/Testimonials/FileYouJustCreatedName.txt', column_side);" NOTE: column_side = 'right' or 'left' (the shorter column; MUST BE IN QUOTATION MARKS!)
+6. Ensure that what you just wrote is lined up with the others above it (same indentation).
+7. Save your changes, and YOU'RE DONE!
+
+
+
+
+INSTRUCTIONS FOR CHANGING "MOST RECENT COLLEGE COMMITTMENT" BANNER
+
+
+
+Create a Player Card for this player FIRST! Then, continue with the directions below...
+
+1. Open up the file "players.html" and Search For (Cmd + F) "Committed Player". There will be two results and they outline the area you are concerned with.
+2. There are four lines with a comment on them that reads "<!-- Editable Line -->"
+3. Change the content on each of these lines to the player information you want (i.e. "images/ProfPics/GabbyNixonLg.JPG" [change to] "images/ProfPics/NoahRosenblatLg.jpg", "Gabby Nixon" [change to] "Noah Rosenblat", etc).
+4. It's very important you don't change anything except the info that pertains to the player.
+5. Save your changes, and YOU'RE DONE!
+
+
+
+
+
+
+
+
+
+
